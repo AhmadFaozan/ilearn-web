@@ -1,0 +1,216 @@
+/*  
+  phone : 620px
+  tablet : 1000px
+*/
+
+@media screen and (max-width: 1000px) {
+/* Bagian awal Ahmad Faozan */
+    .header {
+        display: flex;
+    }
+
+    .wrapper {
+        width: 90%;
+    }
+
+    .logo a {
+        display: block;
+        width: 100%;
+        text-align: center;
+        font-size: 36px;
+    }
+
+    nav .menu {
+        width: 100%;
+        margin: 0;
+    }
+
+    nav .menu ul {
+        text-align: center;
+        margin: auto;
+        line-height: 80px;
+    }
+
+    nav .menu ul li {
+        display: inline-block;
+        float: none;
+    }
+
+    a.tbl-biru {
+        border-radius: 20px;
+        margin-top: 20px;
+        padding: 15px 20px;
+    }
+    section {
+        display: block;
+    }
+
+    section img {
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+/* Bagian Akhir Ahmad faozan */
+
+    /* Bagian awal Abdul haris */
+    main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 7%;
+    }
+    /* Bagian akhir Abdul haris */
+
+    /* bagian awal section */
+    .section ul {
+        margin-left: 0;
+        display: grid;
+        justify-content: center;
+    }
+
+    .section   {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .img-section    {
+        display: grid;
+        justify-content: center;
+    }
+    /* Bagian akhir section */
+	
+    /*  Bagian awal Alaikal fajri  */
+    footer {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .footer-center  {
+        width: 100%;
+        display: grid;
+        justify-content: end;
+    }
+
+    .footer-right   {
+        width: 100%;
+        grid-column-start: 1;
+        grid-column-end: -1;
+        text-align: center;
+        margin: auto;
+    }
+    /* Bagian akhir Alaikal fajri */
+}
+
+@media  (max-width: 620px) {
+/* Bagian awal ahmad faozan */
+    .menu   {
+        float: none;
+    }
+
+    nav ul {
+		display: none;
+		position: absolute;
+	}
+	.menu-toggle    {
+		display: flex;
+		flex-direction: column;
+		height: 20px;
+		justify-content: space-between;
+		position: relative;
+		margin-left: 85%;
+		margin-top: 15%;
+        z-index: 2;
+	}
+
+    nav ul  {
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        background-color: #42c2ff;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        z-index: 1;
+        transform: translateY(-100%);
+        opacity: 0;
+        transition: 1s;
+    }
+    nav ul li    {
+        text-align: center;
+        width: 100%;
+        padding: 10px;
+        display: grid;
+    }
+
+    nav ul li:hover    {
+        text-align: center;
+        width: 100%;
+        padding: 25px;
+        box-shadow: 0 5px 5px -5px #222831,
+        0 -5px 5px -5px #222831;
+        font-weight: bold;
+    }
+
+    nav ul li a {
+        color: #222831;
+        font-size: 1.2em;
+        text-align: center;
+        color: #BBE1FA;
+    }
+    
+    nav ul.slide    {
+        transform: translateY(0);
+        opacity: 1;
+        width: 100%;
+    }
+/* Bagian akhir Ahmad faozan */
+	
+/* Bagian awal Abdul Haris */
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        background-size: cover;
+        padding: 10%;
+    }
+/* Bagian akhir Abdul Haris */
+
+/* Bagian awal section */
+    .section  h3  {
+        font-size: 1.5em;
+        padding-left: 10%;
+    }
+
+    .section ul    {
+        font-size: 0.8em;
+    }
+
+    .img-section    {
+        background-image: url(../image/img6.png);
+        display: grid;
+        justify-content: center;
+    }
+    /* Bagian akhir section */
+	
+    /* Bagian awal Alaikal fajri */
+    footer {
+        grid-template-columns: 1fr;
+    }
+
+    footer .footer-left {
+        text-align: center;
+    }
+
+    footer .footer-center   {
+        display: grid;
+        justify-items: center;
+        box-sizing: border-box;
+        padding-bottom: 5%;
+    }
+
+    .txt-footer p  {
+        font-size: .9em;
+    }
+    /* Bagian akhir Alaikal fajri */
+} 
+
